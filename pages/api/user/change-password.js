@@ -21,7 +21,7 @@ async function handler(req, res){
 
     const client = await connectToDatabase();
 
-    const usersCollection = client.db.collection('users');
+    const usersCollection = client.db().collection('users');
     const user = await usersCollection.findOne({email: userEmail});
 
     if(!user){ // Very strange, because we're getting the user email from the session logged in

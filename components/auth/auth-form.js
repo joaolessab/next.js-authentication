@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { signIn } from 'next-auth/client';
+import { useRouter } from 'next/router';
 
 import classes from './auth-form.module.css';
 
@@ -26,6 +27,7 @@ function AuthForm() {
   const passwordInputRef = useRef();
 
   const [isLogin, setIsLogin] = useState(true);
+  const router = useRouter();
 
   function switchAuthModeHandler() {
     setIsLogin((prevState) => !prevState);
@@ -45,8 +47,11 @@ function AuthForm() {
         email: enteredEmail,
         password: enteredPassword,
       });
-
-      console.log(result);
+      
+      if(!result.error){
+        // DO NOT use window.location here, because it will reset the state of the application, it's ok to use window.location when we're not authenticated only
+        router.replace('/profile');
+      }
     } else {
       try {
         const result = await createUser(enteredEmail, enteredPassword);

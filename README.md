@@ -87,7 +87,9 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Next Auth - Library used to handle Next.js Authentication easily
 - [Next-auth v3](https://next-auth.js.org/v3/getting-started/introduction);
-`npm install --save-exact next-auth@3`
+```bash
+npm install --save-exact next-auth@3
+```
 - In this project, we're going to use any Providers from NextAuth.js library;
 - We have created a auth by scracth using username and password from our database;
 - This package has both Server-Side and Client-Side capabilities;
@@ -97,11 +99,15 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Database + API
 - MongoDB + [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try2);
-`npm install mongodb`
+```bash
+npm install mongodb
+```
 
 ### Encrypt passwords
 - We're using bcrypt library to avoid saving plain password in the database (not a good practice);
-`npm install bcryptjs`
+```bash
+npm install bcryptjs
+```
 
 ### NextAuth Routes
 - To start using our Next Auth library, we need to create a file to catch all routes e concentrate them in the `[...nextauth.js]` file;

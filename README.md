@@ -11,8 +11,8 @@
 4. [JSON Web Token](https://github.com/joaolessab/next.js-authentication#json-web-token)
 5. [Next Auth - Library used to handle Next.js Authentication easily](https://github.com/joaolessab/next.js-authentication#next-auth---library-used-to-handle-nextjs-authentication-easily)
 6. [Database + API](https://github.com/joaolessab/next.js-authentication#database--api)
-7. [Deploying Next.js app](https://github.com/joaolessab/next.js-authentication#deploy-on-vercel)
-8. [Extra: Starting with Next.js from Scratch](https://github.com/joaolessab/next.js)
+7. [Extra: Starting with Next.js from Scratch](https://github.com/joaolessab/next.js)
+8. [Extra: Deploying Next.js Apps](https://github.com/joaolessab/next.js-authentication#extra-deploying-nextjs-apps)
 
 ## How do I run this project, João?
 1. Install the package dependencies:
@@ -118,7 +118,7 @@ npm install bcryptjs
 - Next.js adds and manages Cookies for us automatically;
 <img src="https://raw.githubusercontent.com/joaolessab/next.js-authentication/main/repo-media/screenshot_1.png">
 
-## Deploy on Vercel
+## Extra: Deploying Next.js Apps
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 

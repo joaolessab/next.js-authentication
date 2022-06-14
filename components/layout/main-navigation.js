@@ -1,11 +1,15 @@
 import Link from 'next/link';
-import { useSession } from 'next-auth/client';
+import { useSession, signOut } from 'next-auth/client';
 
 import classes from './main-navigation.module.css';
 
 function MainNavigation() {
   const [session, loading] = useSession();
   
+  function logoutHandler(){
+    signOut(); // Just that and next-auth JS will clean everything for us + Session token cookie will be erased from the Network tab
+  }
+
   return (
     <header className={classes.header}>
       <Link href='/'>
@@ -20,7 +24,7 @@ function MainNavigation() {
               <Link href='/auth'>Login</Link>
             </li>
           )}
-          
+
           { session && (
             <li>
               <Link href='/profile'>Profile</Link>
@@ -29,7 +33,7 @@ function MainNavigation() {
 
           { session && (
             <li>
-              <button>Logout</button>
+              <button onClick={logoutHandler}>Logout</button>
             </li>
           )}
         </ul>

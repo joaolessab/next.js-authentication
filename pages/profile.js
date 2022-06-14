@@ -9,7 +9,7 @@ function ProfilePage() {
 export async function getServerSideProps(context){
   const session = await getSession({req: context.req}); // Behind the scenes, this function will check the cookie + session of the context request
   
-  if(!session){
+  if(!session){ // Session is the JSON Web Token which is managed automatically by Next Auth, which is stored in our browser also by Next Auth
     return {
       redirect: {
         destination: '/auth',

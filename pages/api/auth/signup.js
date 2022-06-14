@@ -23,7 +23,7 @@ async function handler(req, res){
         const client = await connectToDatabase();
         const db = client.db();
 
-        const hashedPassword = hashPassword(password);
+        const hashedPassword = await hashPassword(password); // Needs to wait the result of the promise;
 
         const result = await db.collection('users').insertOne({
             email: email,

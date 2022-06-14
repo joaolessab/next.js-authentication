@@ -5,13 +5,13 @@
 </div>
 
 ## Repository Menu
-1. [How do I run this project, João?](https://github.com/joaolessab/next.js#how-do-i-run-these-projects-jo%C3%A3o)
-2. [How Authentication Works in General?](https://github.com/joaolessab/next.js-authentication/edit/main/README.md#how-authentication-works-in-general)
-3. [How Next.js handles Authentication](https://github.com/joaolessab/next.js-authentication/edit/main/README.md#how-nextjs-handles-authentication)
-4. [JSON Web Token](https://github.com/joaolessab/next.js-authentication/edit/main/README.md#json-web-token)
-5. [Next Auth - Library used to handle Next.js Authentication easily](https://github.com/joaolessab/next.js-authentication/edit/main/README.md#next-auth---library-used-to-handle-nextjs-authentication-easily)
-6. [Database + API](https://github.com/joaolessab/next.js-authentication/edit/main/README.md#database--api)
-7. [Deploying Next.js app](https://github.com/joaolessab/next.js#deploying-nextjs-app)
+1. [How do I run this project, João?](https://github.com/joaolessab/next.js-authentication#how-do-i-run-this-project-jo%C3%A3o)
+2. [How Authentication Works in General?](https://github.com/joaolessab/next.js-authentication#how-authentication-works-in-general)
+3. [How Next.js handles Authentication](https://github.com/joaolessab/next.js-authentication#how-nextjs-handles-authentication)
+4. [JSON Web Token](https://github.com/joaolessab/next.js-authentication#json-web-token)
+5. [Next Auth - Library used to handle Next.js Authentication easily](https://github.com/joaolessab/next.js-authentication#next-auth---library-used-to-handle-nextjs-authentication-easily)
+6. [Database + API](https://github.com/joaolessab/next.js-authentication#database--api)
+7. [Deploying Next.js app](https://github.com/joaolessab/next.js-authentication#deploy-on-vercel)
 8. [Extra: Starting with Next.js from Scratch](https://github.com/joaolessab/next.js-authentication)
 
 ## How do I run this project, João?

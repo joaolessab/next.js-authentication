@@ -1,7 +1,7 @@
-# Next.js Authentication using Next Auth
+# Next.js Authentication (using NextAuth.js) 
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/joaolessab/next.js-authentication/main/repo-media/logo.png" width="450">
+  <img src="https://raw.githubusercontent.com/joaolessab/next.js-authentication/main/repo-media/logo.png" width="600">
 </div>
 
 ## Repository Menu

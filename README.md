@@ -91,6 +91,10 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - To view the built-in routes, [click here](https://next-auth.js.org/v3/getting-started/rest-api);
 - We can always create new aditional custom routes, but we need to check this documentation to not mix with the library built-in ones;
 
+### Cookies
+- Next.js adds and manages Cookies for us automatically;
+<img src="https://raw.githubusercontent.com/joaolessab/next.js-authentication/main/repo-media/screenshot_1.png">
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

@@ -8,7 +8,7 @@ async function handler(req, res){
 
         if (
             !email || 
-            !email.include('@') || 
+            !email.includes('@') || 
             !password || 
             password.trim().length < 7
         ){
@@ -25,7 +25,7 @@ async function handler(req, res){
 
         const hashedPassword = hashPassword(password);
 
-        const result = await db.colletion('users').insertOne({
+        const result = await db.collection('users').insertOne({
             email: email,
             password: hashedPassword // We should not store the plain password in our database
         });

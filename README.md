@@ -12,7 +12,7 @@
 5. [Next Auth - Library used to handle Next.js Authentication easily](https://github.com/joaolessab/next.js-authentication#next-auth---library-used-to-handle-nextjs-authentication-easily)
 6. [Database + API](https://github.com/joaolessab/next.js-authentication#database--api)
 7. [Deploying Next.js app](https://github.com/joaolessab/next.js-authentication#deploy-on-vercel)
-8. [Extra: Starting with Next.js from Scratch](https://github.com/joaolessab/next.js-authentication)
+8. [Extra: Starting with Next.js from Scratch](https://github.com/joaolessab/next.js)
 
 ## How do I run this project, João?
 1. Install the package dependencies:

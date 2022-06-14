@@ -1,4 +1,5 @@
 import { connectToDatabase } from '../../../lib/db';
+import { hashPassword } from '../../../lib/auth';
 
 async function handler(req, res){
     const data = req.body;
@@ -21,9 +22,15 @@ async function handler(req, res){
     const client = await connectToDatabase();
     const db = client.db();
 
-    db.colletion('users').insertOne({
+    const hashedPassword = hashPassword(password);
+
+    const result = await db.colletion('users').insertOne({
         email: email,
-        password: password // We should not store the plain password in our database
+        password: hashedPassword // We should not store the plain password in our database
+    });
+
+    res.status(201).json({
+        message: 'Created User!'
     });
 }
 

@@ -9,9 +9,11 @@ function UserProfile() {
 
   useEffect(() => {
     getSession().then(session => {
-      setIsLoading(false);
       if (!session){
         window.location.href = '/auth';
+      }
+      else{
+        setIsLoading(false);
       }
     })
   }, []);

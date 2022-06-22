@@ -1,4 +1,4 @@
-import { getSession } from 'next-auth/client'; // We can use this even though is being imported in the client-side
+import { getSession } from 'next-auth/react'; // We can use this even though is being imported in the client-side
 import UserProfile from '../components/profile/user-profile';
 
 function ProfilePage() {

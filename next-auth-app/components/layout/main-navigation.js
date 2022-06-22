@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import { useSession, signOut } from 'next-auth/client';
+import { useSession, signOut } from 'next-auth/react';
 
 import classes from './main-navigation.module.css';
 
 function MainNavigation() {
-  const [session, loading] = useSession();
+  const { data: session, status } = useSession();
+
   
   function logoutHandler(){
     signOut(); // Just that and next-auth JS will clean everything for us + Session token cookie will be erased from the Network tab
@@ -19,7 +20,7 @@ function MainNavigation() {
       </Link>
       <nav>
         <ul>
-          { !session && !loading && (
+          { !session && status !== "loading" && (
             <li>
               <Link href='/auth'>Login</Link>
             </li>

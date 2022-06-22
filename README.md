@@ -86,7 +86,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - Only the server knows that key;
 
 ## Next Auth - Library used to handle Next.js Authentication easily
-- [Next-auth v3](https://next-auth.js.org/v3/getting-started/introduction);
+- [Next-auth v4](https://next-auth.js.org/getting-started/introduction);
 ```bash
 npm install --save-exact next-auth@3
 ```
@@ -111,7 +111,7 @@ npm install bcryptjs
 
 ### NextAuth Routes
 - To start using our Next Auth library, we need to create a file to catch all routes e concentrate them in the `[...nextauth.js]` file;
-- To view the built-in routes, [click here](https://next-auth.js.org/v3/getting-started/rest-api);
+- To view the built-in routes, [click here](https://next-auth.js.org/getting-started/example);
 - We can always create new aditional custom routes, but we need to check this documentation to not mix with the library built-in ones;
 
 ### Cookies

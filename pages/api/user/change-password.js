@@ -1,6 +1,6 @@
 import { getSession } from "next-auth/react";
-import { hashPassword, verifyPassword } from "../../../lib/auth";
-import { connectToDatabase } from "../../../lib/db";
+import { hashPassword, verifyPassword } from "../../../utils/password";
+import { connectToDatabase } from "../../../utils/db";
 
 // /api/user/change-password
 async function handler(req, res){
